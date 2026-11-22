@@ -1,0 +1,35 @@
+/* Soarlodge · accessibility. La cascada se organiza por intervalo de viewport. */
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}@media print{.topnote,.header,.footer,.voucher-actions,.skip-link{display:none!important}.voucher-page{padding:0;max-width:none}.voucher-success{display:none}.voucher-paper{border:1px solid #ccc;box-shadow:none;break-inside:avoid}body,.site-shell{background:white}}@media(prefers-reduced-motion:reduce){.hero-flight-canvas{display:none}.hero-plane{transition:none;will-change:auto}}@media print{
+  @page{size:A4;margin:8mm}
+  html,body,.site-shell,.main-content{background:white!important}
+  .voucher-page--sunlit{width:100%;max-width:none;padding:0!important}
+  .voucher-welcome,.voucher-page--sunlit .voucher-actions,.topnote,.header,.footer{display:none!important}
+  .voucher-ticket{box-shadow:none!important;border:1px solid #ddd!important;border-radius:12px;break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .voucher-cover{height:215px}
+  .voucher-cover-content{padding:17px 25px}
+  .voucher-cover-main h2{font-size:52px}
+  .voucher-cover-main strong,.voucher-ticket-status strong{font-size:12px}
+  .voucher-ticket-status{padding:11px 25px}
+  .voucher-ticket-identifiers{padding:12px 25px}
+  .voucher-ticket-main{padding:18px 25px}
+  .voucher-section-head h3{font-size:21px}
+  .voucher-trip-pills{margin:9px 0}
+  .voucher-experience{padding:12px}
+  .voucher-totals{padding:15px 25px;gap:20px}
+  .voucher-totals h3{font-size:22px}
+  .voucher-totals-table>div{padding:5px 0}
+  .voucher-ticket .voucher-ticket-footer{padding:12px 25px}
+}@media(prefers-reduced-motion:reduce){
+ .destination-card,.offer-card{animation:none!important}
+ .detail-hero--photo img,.about-panels article{transition:none!important}
+}@media print{
+ .destination-card,.offer-card{animation:none!important}
+ .voucher-welcome-mark{display:none}
+}@media(prefers-reduced-motion:reduce){
+  .trip-cloud{animation:none!important;will-change:auto!important}
+  .trip-sky__plane{visibility:hidden!important;will-change:auto!important}
+}@media(prefers-reduced-motion:reduce){.checkout-moving-walkway::before{animation:none!important}}@media(prefers-reduced-motion:reduce){.page-atmosphere__shape,.catalog-heading__ring,.catalog-ferris-wheel__rotor,.catalog-ferris-wheel__cabin{animation:none!important}.page-atmosphere__shape{transform:none!important}}@media print{.page-atmosphere,.catalog-heading__ornament{display:none!important}}@media(prefers-reduced-motion:reduce){
+  .destination-motif,.about-travel-backdrop__route,.about-passport-stamp,.about-postcard,.about-compass{animation:none!important;will-change:auto!important}
+}@media print{.destination-motifs,.about-travel-backdrop{display:none!important}}@media(prefers-reduced-motion:reduce){
+  .page-atmosphere--catalog .catalog-motif{animation:none!important;will-change:auto!important}
+}@media print{.page-atmosphere--catalog .catalog-motif-constellation{display:none!important}}@media print{.catalog-region-heading__spark{background:transparent}}@media(prefers-reduced-motion:reduce){.benefit-pills a{transition:none}}

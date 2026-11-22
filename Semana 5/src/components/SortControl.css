@@ -1,0 +1,110 @@
+/* Soarlodge · selector cálido y accesible. La lista aparece en capa flotante,
+   nunca empuja la cuadrícula ni deja botones de navegador sin personalizar. */
+.sort-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 12;
+}
+.sort-field-label {
+  font-size: 11px;
+  font-weight: 900;
+  color: #66847d;
+  letter-spacing: .06em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.sort-menu { position: relative; min-width: 206px; }
+.sort-menu-trigger {
+  width: 100%;
+  min-height: 53px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 15px;
+  background: #fffdfa;
+  border: 1.5px solid #d8e8dd;
+  border-radius: 17px;
+  color: #244d50;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 6px 18px rgba(31, 100, 103, .06);
+  transition: background .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.sort-menu-trigger:hover,
+.sort-menu-trigger[aria-expanded="true"] {
+  background: #e8f6f1;
+  border-color: #5ebeb1;
+  box-shadow: 0 9px 22px rgba(31, 100, 103, .12);
+}
+.sort-menu-trigger:focus-visible,
+.sort-menu-option:focus-visible {
+  outline: 3px solid #f0a46d;
+  outline-offset: 3px;
+}
+.sort-menu-glyph { width: 20px; height: 20px; flex-shrink: 0; color: #e47759; }
+.sort-menu-current { flex: 1; text-align: left; white-space: nowrap; }
+.sort-menu-chevron {
+  width: 17px; height: 17px; flex-shrink: 0;
+  transition: transform .2s ease; color: #43857c;
+}
+.sort-menu-chevron.is-open { transform: rotate(180deg); }
+.sort-menu-options {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: max(100%, 214px);
+  display: grid;
+  gap: 5px;
+  padding: 8px;
+  border: 1px solid #e0e9df;
+  border-radius: 19px;
+  background: #fffefa;
+  box-shadow: 0 22px 42px rgba(33, 75, 77, .20);
+  z-index: 80;
+  animation: sort-float-in .16s ease-out both;
+}
+.sort-menu-option {
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #425d5c;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 800;
+  transition: background .15s ease;
+}
+.sort-menu-option:hover { background: #fff1e2; }
+.sort-menu-option.is-selected { background: #e0f4ee; color: #186e69; }
+.sort-menu-check { color: #e36e52; width: 14px; flex-shrink: 0; font-weight: 1000; }
+@keyframes sort-float-in {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 1000px) {
+  .sort-field-label { display: none; }
+}
+@media (max-width: 760px) {
+  .catalog-toolbar { align-items: stretch; }
+  .sort-field { width: 100%; justify-content: flex-end; }
+  .sort-field-label { display: inline; }
+  .sort-menu { min-width: min(235px, 65vw); }
+}
+@media (max-width: 420px) {
+  .sort-field { justify-content: space-between; }
+  .sort-menu { min-width: 0; width: 63%; }
+  .sort-menu-trigger { min-height: 49px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sort-menu-options { animation: none; }
+  .sort-menu-trigger, .sort-menu-chevron, .sort-menu-option { transition: none; }
+}

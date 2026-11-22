@@ -1,0 +1,11 @@
+/* Soarlodge · entrada única de estilos.
+   React y datos compartidos. Cada tamaño ajusta solo su presentación.
+   Orden: base → ajustes compactos → escritorio → tablet → móvil → accesibilidad.
+   Los bloques por dispositivo son mutuamente excluyentes salvo compact.css. */
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/responsive/compact.css';
+@import './styles/responsive/desktop.css';
+@import './styles/responsive/tablet.css';
+@import './styles/responsive/mobile.css';
+@import './styles/accessibility.css';

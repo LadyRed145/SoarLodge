@@ -1,0 +1,59 @@
+name: Publicar Soarlodge en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'Semana 5/package-lock.json'
+      - name: Confirmar URL del backend
+        env:
+          API_ORIGIN: ${{ vars.SOARLODGE_API_ORIGIN }}
+        run: |
+          if [[ ! "$API_ORIGIN" =~ ^https://[^/]+$ ]]; then
+            echo 'Configura la variable SOARLODGE_API_ORIGIN con el origen HTTPS de tu backend Node (sin /api ni barra final).'
+            exit 1
+          fi
+      - name: Dependencias y pruebas
+        working-directory: Semana 5
+        run: |
+          npm ci
+          npm run check
+      - name: Construir para GitHub Pages
+        working-directory: Semana 5
+        env:
+          GITHUB_PAGES: 'true'
+          VITE_API_ORIGIN: ${{ vars.SOARLODGE_API_ORIGIN }}
+        run: npm run build
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'Semana 5/dist'
+      - name: Publicar sitio
+        id: deployment
+        uses: actions/deploy-pages@v4

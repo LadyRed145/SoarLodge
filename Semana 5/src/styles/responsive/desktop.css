@@ -1,0 +1,42 @@
+/* Soarlodge · desktop. La cascada se organiza por intervalo de viewport. */
+@media (min-width:1025px) and (max-width:1100px){
+  .hero-inner{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(14px,2.2vw,28px)}
+  .hero-copy{min-width:0}
+  .hero h1{font-size:clamp(39px,4.9vw,57px);line-height:1.13;letter-spacing:-.06em}
+  .hero-subtitle{font-size:clamp(14px,1.5vw,16px);line-height:1.65}
+  .hero-art{min-width:0;width:100%;height:clamp(300px,34vw,400px)}
+  .hero-image-front{height:clamp(248px,29vw,315px)}
+  .hero-image-back{height:clamp(212px,26vw,280px)}
+}
+
+
+/* Etapa 32 · simetría desktop intermedio: Mi viaje mantiene una columna
+   principal más compacta para que titulares, banners y resumen respiren parejo. */
+@media (min-width:1025px) and (max-width:1280px){
+  .trip-review-page{width:min(100%,980px);display:grid;gap:22px}
+  .trip-route-banner,
+  .previous-voucher,
+  .trip-review-page .trip-summary,
+  .review-actions,
+  .review-empty{max-width:740px}
+  .trip-review-page .trip-summary{margin:0}
+}
+
+
+
+/* Mi viaje: los CTA externos respetan la sangría del botón de pago interior. */
+@media(min-width:1025px){
+  .trip-review-page .review-actions{max-width:740px;width:100%;padding-inline:26px}
+}
+
+/* SOARLODGE_EMPTY_CARD_ALIGNED_V2 · Mi viaje sin itinerario.
+   Misma columna de 740px que las dos tarjetas superiores. */
+@media (min-width: 1025px) {
+  .trip-review-page > .review-empty {
+    width: 100%;
+    max-width: 740px;
+    min-width: 0;
+    margin-inline: 0;
+    box-sizing: border-box;
+  }
+}

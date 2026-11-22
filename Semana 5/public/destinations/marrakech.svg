@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Paisaje ilustrado de marrakech">
+ <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e4a77a"/><stop offset="1" stop-color="#f7c79c"/></linearGradient><linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#203d4a" stop-opacity=".12"/><stop offset="1" stop-color="#121c27" stop-opacity=".24"/></linearGradient></defs>
+ <rect width="800" height="540" fill="url(#sky)"/><circle cx="610" cy="119" r="61" fill="#f7e8c5" opacity=".74"/>
+ <path d="M-5 169q175-61 355-13t460 0" stroke="#f5e2ca" opacity=".24" stroke-width="4" fill="none"/>
+ <path d="M0 340q140-91 320-11t480-28v239H0Z" fill="#ad7162"/><rect x="150" y="269" width="490" height="265" fill="#d79472"/><path d="M148 269h495v27H148Z" fill="#a66d64"/><rect x="325" y="340" width="126" height="200" rx="62" fill="#704a56"/><rect x="199" y="332" width="59" height="90" rx="28" fill="#9b6561"/><rect x="530" y="332" width="59" height="90" rx="28" fill="#9b6561"/><rect x="535" y="155" width="78" height="120" fill="#c6816b"/><path d="m523 155 51-52 51 52Z" fill="#875363"/><path d="M566 94v25" stroke="#f7ddae" stroke-width="5"/><path d="M0 485q185-43 410-10t390 3v70H0Z" fill="#655163"/><rect width="800" height="540" fill="url(#shade)"/>
+ <path d="M34 35h85M34 35v62M766 35h-85M766 35v62M34 505h85M34 505v-62M766 505h-85M766 505v-62" fill="none" stroke="#fff2d6" opacity=".52" stroke-width="2"/>
+ </svg>

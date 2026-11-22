@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Paisaje ilustrado de sydney">
+ <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7297b6"/><stop offset="1" stop-color="#e7bfa5"/></linearGradient><linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#203d4a" stop-opacity=".12"/><stop offset="1" stop-color="#121c27" stop-opacity=".24"/></linearGradient></defs>
+ <rect width="800" height="540" fill="url(#sky)"/><circle cx="610" cy="119" r="61" fill="#f7e8c5" opacity=".74"/>
+ <path d="M-5 169q175-61 355-13t460 0" stroke="#f5e2ca" opacity=".24" stroke-width="4" fill="none"/>
+ <path d="M0 330q170-80 300-22t500-28v260H0Z" fill="#356c8c"/><path d="M0 419q210-20 420 12t380-19v128H0Z" fill="#447f9a"/><path d="M128 352h92v68h-92Z" fill="#3b637c"/><path d="M230 322h40v99h-40Z" fill="#4d6477"/><path d="M292 295h50v128h-50Z" fill="#526679"/><path d="M500 413q-83-134-93 0Z" fill="#ecdfd0"/><path d="M500 413q-10-153 97 0Z" fill="#f1e5d5"/><path d="M500 413q130-141 140 0Z" fill="#e0d2c1"/><path d="M365 414h310v18H365Z" fill="#283a4f"/><path d="M0 467q170-15 310 10t490-2" fill="none" stroke="#a5c7bc" stroke-width="5"/><rect width="800" height="540" fill="url(#shade)"/>
+ <path d="M34 35h85M34 35v62M766 35h-85M766 35v62M34 505h85M34 505v-62M766 505h-85M766 505v-62" fill="none" stroke="#fff2d6" opacity=".52" stroke-width="2"/>
+ </svg>

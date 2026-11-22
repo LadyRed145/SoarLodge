@@ -1,0 +1,2 @@
+/* Soarlodge · compact. La cascada se organiza por intervalo de viewport. */
+@media(max-width:1100px){.primary-nav{gap:14px}.header-cta{display:none}.featured-grid{grid-template-columns:repeat(2,1fr)}.travel-planner-layout{grid-template-columns:minmax(0,1fr) 295px}.offer-grid{grid-template-columns:1fr}.hero-art{height:465px}.hero-image-front{height:330px}.hero-image-back{height:295px}.hero-sticker{width:100px;height:100px;font-size:27px}.checkout-layout{grid-template-columns:1fr 330px}}

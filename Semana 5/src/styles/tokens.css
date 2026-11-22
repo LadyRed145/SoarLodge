@@ -1,0 +1,5 @@
+/* Soarlodge · tokens. La cascada se organiza por intervalo de viewport. */
+/* SOARLODGE / SUNLIT EDITION · Identidad independiente de Umbralis.
+   Diseño editorial luminoso con coral, crema, turquesa, azafrán y tinta profunda. */
+:root{font-family:"Trebuchet MS","Avenir Next","Segoe UI",system-ui,sans-serif;color:#243943;background:#fffbf3;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;--ink:#243943;--muted:#64777a;--cream:#fffbf3;--paper:#fff;--coral:#fa7759;--orange:#f39b56;--teal:#197f7e;--deep:#175d64;--aqua:#d6f1eb;--sun:#ffcd64;--line:#e7e9e4;--shadow:0 16px 42px #27475115}
+*{box-sizing:border-box}html{scroll-behavior:smooth}

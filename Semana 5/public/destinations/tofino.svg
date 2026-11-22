@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Tofino ilustrado</title>
+  <desc id="desc">Bosque costero con pinos, neblina y mar sereno.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#cfe7dd"/><stop offset="55%" stop-color="#edf5ef"/><stop offset="100%" stop-color="#f7efe3"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2a8480"/><stop offset="100%" stop-color="#86c8b8"/></linearGradient>
+    <linearGradient id="forest" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2d5c57"/><stop offset="100%" stop-color="#183732"/></linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)"/>
+  <ellipse cx="728" cy="124" rx="94" ry="54" fill="#fff8e8" opacity=".82"/>
+  <path d="M0 326c102-51 180-67 287-53 81 10 144 38 203 31 76-8 121-61 190-67 61-6 125 14 280 76v327H0Z" fill="#c5ddd5"/>
+  <path d="M0 404c116-38 214-45 311-19 65 18 128 53 199 56 92 5 159-44 231-54 72-10 125 9 219 44v209H0Z" fill="url(#sea)"/>
+  <path d="M0 377c96-32 175-40 268-25 62 10 103 35 157 41 64 8 110-8 173-31 65-24 138-28 362 18v44H0Z" fill="#9ec9bc" opacity=".75"/>
+  <g fill="url(#forest)">
+    <path d="M108 470 144 382l31 80 20-38 32 68z"/>
+    <path d="M180 470 214 350l27 67 21-35 30 88z"/>
+    <path d="M270 470 306 370l35 74 19-30 28 56z"/>
+    <path d="M680 470 716 362l29 61 18-26 32 73z"/>
+    <path d="M756 470 790 338l33 71 23-35 32 96z"/>
+    <path d="M840 470 874 382l28 54 18-24 26 58z"/>
+  </g>
+  <rect y="470" width="960" height="170" fill="#244a46"/>
+  <path d="M0 478c120 23 212 29 322 12 97-15 136-42 251-46 104-4 181 20 387 58v138H0Z" fill="#183733"/>
+  <path d="M0 514c116 16 237 11 344-16 83-20 160-56 267-59 98-3 193 24 349 74v127H0Z" fill="#102723"/>
+</svg>

@@ -1,0 +1,34 @@
+"""Esquema académico: todas las ofertas de vuelo y alojamiento son ficticias."""
+type Query {
+  flights(destinationId: ID!): [Flight!]!
+  hotels(destinationId: ID!): [Hotel!]!
+}
+
+type Flight {
+  id: ID!
+  destinationId: ID!
+  airline: String!
+  flightNumber: String!
+  origin: String!
+  arrival: String!
+  departureDate: String!
+  returnDate: String!
+  price: Float!
+  currency: String!
+  available: Boolean!
+  seatsLeft: Int!
+}
+
+type Hotel {
+  id: ID!
+  destinationId: ID!
+  name: String!
+  location: String!
+  checkIn: String!
+  checkOut: String!
+  nightlyPrice: Float!
+  currency: String!
+  amenities: [String!]!
+  available: Boolean!
+  roomsLeft: Int!
+}

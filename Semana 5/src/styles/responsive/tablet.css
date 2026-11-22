@@ -1,0 +1,152 @@
+/* Soarlodge · tablet. La cascada se organiza por intervalo de viewport. */
+@media (min-width:761px) and (max-width:1024px){
+  .mobile-menu-button{display:block;margin-left:auto;border:1px solid #d9eee6;background:#fff;border-radius:12px;padding:11px;color:var(--ink);font-weight:800}
+  .primary-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fffdfa;box-shadow:0 19px 19px #344b4b27;padding:15px 22px;flex-direction:column;align-items:stretch;gap:0}
+  .primary-nav.is-open{display:flex}
+  .primary-nav a{padding:14px 3px}
+}@media (min-width:761px) and (max-width:1100px){
+  .catalog-page{width:min(1200px,calc(100% - 92px))}
+  .page-atmosphere--catalog .catalog-motif{width:52px;height:52px;opacity:.77}
+  .page-atmosphere--catalog .catalog-motif__icon{font-size:29px;opacity:1}
+  .page-atmosphere--catalog .catalog-motif--1,.page-atmosphere--catalog .catalog-motif--3,.page-atmosphere--catalog .catalog-motif--5,.page-atmosphere--catalog .catalog-motif--7,.page-atmosphere--catalog .catalog-motif--9{left:8px}
+  .page-atmosphere--catalog .catalog-motif--2,.page-atmosphere--catalog .catalog-motif--4,.page-atmosphere--catalog .catalog-motif--6,.page-atmosphere--catalog .catalog-motif--8{right:8px}
+}@media (min-width:761px) and (max-width:1024px){
+  .layout-width{width:min(100% - 56px,960px)}
+  .header-inner{min-height:78px;gap:16px}
+  .header .brand-mark{width:50px;height:50px}
+  .brand-stack strong{font-size:23px}
+  .topnote{font-size:11px;gap:9px}
+  .topnote-experience{display:none}
+
+  /* Inicio: texto y collage en filas propias, sin cruces entre sí. */
+  .hero{padding-bottom:102px}
+  .hero-inner{grid-template-columns:minmax(0,1fr);gap:8px;min-height:0}
+  .hero-copy{min-width:0;max-width:720px;padding:60px 0 8px}
+  .hero h1{font-size:clamp(54px,7vw,72px);line-height:1.07;letter-spacing:-.055em;margin:24px 0}
+  .hero-subtitle{font-size:16px;line-height:1.7;max-width:590px}
+  .hero-art{height:390px;width:min(100%,580px);min-width:0;max-width:none;margin:0 auto}
+  .hero-image-front{height:305px;width:53%;top:40px;left:10%}
+  .hero-image-back{height:274px;width:45%;top:15px;right:9%}
+  .hero-sticker{width:85px;height:85px;font-size:24px;right:4%;top:62%}
+  .hero-search-shell{margin-top:12px;margin-bottom:-56px}
+  .hero-search{display:grid;grid-template-columns:54px minmax(0,1fr) minmax(160px,195px);gap:12px;padding:18px 21px;min-height:0}
+  .search-pictogram{grid-column:1;grid-row:1}
+  .hero-search label{grid-column:2/-1;grid-row:1;min-width:0}
+  .hero-search input{grid-column:1/3;grid-row:2;min-width:0;width:100%}
+  .hero-search button{grid-column:3;grid-row:2;width:100%}
+  .section.explore-strip{padding-top:148px;padding-bottom:82px}
+  .explore-strip-inner{grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,45px);align-items:start}
+  .explore-strip-inner h2{font-size:clamp(34px,4.2vw,47px);line-height:1.14}
+  .benefit-pills{gap:9px;flex-wrap:wrap}
+  .featured-grid,.catalog-destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .section-head{gap:18px}
+  .section-head h2,.promo-section h2{font-size:clamp(32px,4.4vw,46px)}
+
+  /* Catálogo: noria y texto comparten el bloque, con espacio real reservado. */
+  .catalog-page{width:min(100% - 76px,930px)}
+  .catalog-heading{padding:33px 33px;min-height:255px}
+  .catalog-heading>div:first-child{max-width:calc(100% - 166px);min-width:0}
+  .catalog-heading h1{font-size:clamp(38px,4.6vw,50px);line-height:1.13}
+  .catalog-heading__ornament{right:16px;width:148px;height:148px}
+  .catalog-toolbar{flex-wrap:wrap;gap:12px}
+  .catalog-toolbar .search-field{flex:1 1 300px;min-width:0}
+  .catalog-toolbar .sort-field{margin-left:auto}
+  .catalog-region-heading{gap:12px}
+
+  /* Detalle y planificador: fichas y controles con anchos utilizables. */
+  .detail-heading{align-items:flex-start;flex-wrap:wrap;gap:17px}
+  .detail-heading>div:first-child{flex:1 1 430px;min-width:0}
+  .detail-heading h1{font-size:clamp(45px,6vw,63px);line-height:1.1}
+  .detail-top-actions{flex-wrap:wrap}
+  .detail-columns{grid-template-columns:minmax(0,1fr);gap:22px}
+  .detail-hero{height:clamp(310px,40vw,410px)}
+  .planner-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .planner-fields label:first-child{grid-column:1/-1}
+  .travel-planner-layout{display:flex;flex-direction:column;gap:25px}
+  .travel-planner-layout .travel-offers-main{order:0;width:100%;min-width:0}
+  .travel-planner-layout .trip-summary-sticky{order:1;position:static;width:100%;max-width:100%;margin:0}
+  .offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .offer-section-head{flex-wrap:wrap;gap:10px}
+  .options-intro{gap:14px}
+  .options-intro h2{font-size:clamp(34px,4vw,44px)}
+  .options-emblem{width:86px;height:86px;flex-shrink:0}
+
+  /* Checkout, Nosotros y pie: nunca comprimir dos paneles grandes a la fuerza. */
+  .checkout-layout{grid-template-columns:minmax(0,1fr);gap:25px}
+  .checkout-ticket{position:static;max-width:520px;width:100%;justify-self:center}
+  .checkout-page-heading h1,.page-heading h1{font-size:clamp(39px,5.1vw,54px);line-height:1.13}
+  .about-heading{padding:38px 35px;padding-right:190px}
+  .about-brand-stamp{right:18px}
+  .about-brand-mark{width:90px;height:90px}
+  .about-panels{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about-panels article:last-child{grid-column:1/-1}
+  .favorites-page .destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-content{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .footer-card{grid-column:1/-1}
+  .footer-bottom{flex-wrap:wrap;gap:8px}
+
+  /* Fondo siempre decorativo, contenido siempre legible/clicable. */
+  .destination-motifs,.about-travel-backdrop,.page-atmosphere{pointer-events:none}
+  .destination-motif{opacity:.38;width:55px;height:55px}
+  .destination-motif__symbol{font-size:27px}
+  .page-atmosphere--catalog .catalog-motif{opacity:.55}
+}@media (min-width:761px) and (max-width:840px){
+  .catalog-heading{padding:28px;min-height:245px}
+  .catalog-heading__ornament{right:9px;width:125px;height:125px}
+  .catalog-heading>div:first-child{max-width:calc(100% - 132px)}
+  .catalog-heading h1{font-size:37px}
+  .catalog-heading p{font-size:14px}
+  .explore-strip-inner{gap:22px}
+  .offer-card{min-width:0}
+}
+
+/* En tablets también usamos un menú plegable en el flujo normal del header.
+   Así no cubre la escena del avión ni otros fondos. */
+@media(min-width:761px) and (max-width:1024px){
+  .header-inner{flex-wrap:wrap;align-content:center;column-gap:14px;row-gap:0}
+  .mobile-menu-button{flex-shrink:0}
+  .header-inner>.primary-nav{position:static;inset:auto;margin:0;flex:0 0 100%;width:100%;min-width:0;box-shadow:none;background:#fffdfa;z-index:auto;overflow-y:auto;overscroll-behavior:contain}
+  .header-inner>.primary-nav.is-open{display:flex;max-height:min(55dvh,420px);padding:8px 0 14px;border-top:1px solid #e4ede5}
+  .header-inner>.primary-nav a{padding:12px 6px}
+}
+
+
+/* Etapa 32 · simetría tablet: la columna visual se estabiliza, los bloques
+   informativos comparten ancho y el catálogo evita saltos laterales. */
+@media(min-width:761px) and (max-width:1024px){
+  .trip-review-page{display:grid;gap:20px;align-items:start}
+  .trip-review-page>*{width:100%;min-width:0}
+  .trip-review-intro,
+  .trip-route-banner,
+  .previous-voucher,
+  .trip-review-page .trip-summary,
+  .review-actions,
+  .review-empty{max-width:46rem;margin-inline:auto;width:100%}
+  /* Mi viaje: misma columna visual en todas las tarjetas, dejando a la
+     derecha una franja de cielo libre. Solo presentación, sin tocar el vuelo. */
+  .trip-review-intro,
+  .trip-route-banner,
+  .previous-voucher,
+  .trip-review-page .trip-summary,
+  .trip-review-page .review-actions,
+  .trip-review-page > .review-empty{max-width:min(740px,calc(100% - clamp(72px,9vw,120px)));margin-inline:0}
+  .trip-review-page .trip-summary{margin:0}
+  /* CTA exteriores alineados con el botón de pago (borde 1px + padding 25px). */
+  .trip-review-page .review-actions{padding-inline:26px}
+  /* La nubecita amarilla ya no queda detrás de la tarjeta de ruta. */
+  .page-atmosphere--trip .trip-cloud--butter{right:1%;width:clamp(90px,10vw,112px)}
+  .previous-voucher{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center}
+  .catalog-layout{gap:22px}
+  .catalog-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end}
+  .results-bar{padding-inline:0}
+  .section-head>div,
+  .explore-strip-inner,
+  .promo-section-inner>div:first-child{max-width:46rem}
+  .checkout-form-card{max-width:46rem;width:100%;margin-inline:auto}
+}
+@media(min-width:761px) and (max-width:900px){
+  .previous-voucher{grid-template-columns:1fr;align-items:start}
+  .previous-voucher .btn,
+  .review-actions .btn{width:100%}
+  .review-actions{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+}

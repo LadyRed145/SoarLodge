@@ -1,0 +1,196 @@
+/* Soarlodge · mobile. La cascada se organiza por intervalo de viewport. */
+@media(max-width:760px){.layout-width{width:min(100% - 32px,620px)}.topnote{font-size:10px;gap:7px}.topnote span:last-child{display:none}.header-inner{min-height:75px;gap:10px}.brand-mark{width:48px;height:48px}.brand-stack strong{font-size:22px}.brand-stack small{font-size:8px}.mobile-menu-button{display:block;margin-left:auto;border:1px solid #d9eee6;background:#fff;border-radius:12px;padding:11px;color:var(--ink);font-weight:800}.primary-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fffdfa;box-shadow:0 19px 19px #344b4b27;padding:15px 22px;flex-direction:column;align-items:stretch;gap:0}.primary-nav.is-open{display:flex}.primary-nav a{padding:14px 3px}.hero{padding-bottom:80px}.hero-inner{grid-template-columns:1fr;min-height:0}.hero-copy{padding:60px 0 0}.hero h1{font-size:clamp(53px,10vw,82px)}.hero-art{height:340px;max-width:510px;width:100%;margin:auto}.hero-image-front{width:56%;height:265px;left:12%;top:40px}.hero-image-back{width:45%;height:224px;right:10%;top:7px}.sun-doodle{font-size:83px;right:0}.hero-sticker{right:4%;top:60%;height:76px;width:76px;font-size:23px;border-width:3px}.hero-sticker small{font-size:12px}.hero-art-caption{font-size:9px}.hero-search{display:grid;grid-template-columns:40px 1fr;gap:10px;padding:17px}.search-pictogram{width:40px;height:40px}.hero-search label{min-width:0}.hero-search input,.hero-search button{grid-column:1/-1;width:100%}.hero-search-shell{margin-bottom:-166px}.explore-strip{padding-top:180px}.explore-strip-inner{grid-template-columns:1fr;gap:2px}.section{padding-block:55px}.section-head{align-items:flex-start;flex-direction:column}.featured-grid,.destination-grid,.catalog-destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.destination-cover{height:165px}.destination-body{padding:17px}.destination-body h3{font-size:21px}.card-bottom{flex-direction:column;align-items:flex-start}.promo-section-inner{grid-template-columns:1fr;padding-block:44px}.promo-illustration{height:205px}.promo-circle{left:16%;top:25px;width:140px;height:140px;font-size:45px}.promo-suitcase{font-size:105px}.journey-steps{grid-template-columns:1fr}.catalog-heading{padding:29px 25px}.catalog-heading:after{font-size:120px}.catalog-heading-symbol{display:none}.catalog-toolbar{flex-wrap:wrap}.search-field{min-width:100%}.detail-heading,.options-intro{align-items:flex-start;flex-direction:column}.detail-hero{height:290px}.detail-columns{grid-template-columns:1fr;gap:15px;margin:25px 0 45px}.planner-fields{grid-template-columns:1fr}.travel-planner-layout{display:flex;flex-direction:column}.trip-summary-sticky{position:static;order:-1;width:100%}.travel-offers-main{width:100%}.offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.checkout-layout{grid-template-columns:1fr}.checkout-ticket{position:static;order:-1}.footer-content{grid-template-columns:1fr 1fr;gap:25px}.footer-card{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:7px}.about-panels{grid-template-columns:1fr}}@media(max-width:530px){.hero h1{font-size:53px}.hero-subtitle{font-size:15px}.hero-mini-social{display:block}.hero-mini-social p{margin-top:5px}.hero-image-front{left:5%;width:63%}.hero-image-back{right:2%;width:53%}.destination-grid,.featured-grid,.catalog-destination-grid,.offer-grid{grid-template-columns:1fr}.destination-cover{height:238px}.card-bottom{flex-direction:row;align-items:center}.offer-section-head{align-items:flex-start;flex-direction:column}.checkout-fields,.payment-options,.voucher-grid{grid-template-columns:1fr}.checkout-form-card{padding:20px}.voucher-id{grid-template-columns:1fr}.voucher-paper>header{padding:20px}.voucher-paper h2{font-size:23px}.voucher-stamp{height:65px;width:65px;font-size:12px}.voucher-success{align-items:flex-start;padding:20px}.voucher-success>span{height:44px;width:44px;font-size:26px}.voucher-success h1{font-size:24px}.split-title{align-items:flex-start}.favorites-decoration{display:none}.footer-content{grid-template-columns:1fr}.footer-card{grid-column:auto}.catalog-heading h1{font-size:41px}}@media(max-width:760px){.hero-flight-trail{opacity:.95}.hero-plane-svg{width:39px;height:39px}}@media(max-width:760px){.destination-cover{height:180px}.detail-photo-bottom{flex-direction:column;align-items:flex-start;gap:4px}.detail-photo-bottom small{text-align:left}.voucher-cover{height:300px}.voucher-cover-content{padding:23px}.voucher-ticket-status{padding:18px 22px}.voucher-ticket-status-badge{display:none}.voucher-ticket-identifiers{grid-template-columns:1fr 1fr;padding:20px 22px}.voucher-ticket-main{padding:27px 22px}.voucher-totals{grid-template-columns:1fr;gap:13px;padding:25px 22px}}@media(max-width:530px){.destination-cover{height:230px}.voucher-cover{height:295px}.voucher-cover-top{align-items:flex-start}.voucher-ticket-label{font-size:8px;padding:8px 9px}.voucher-ticket-brand{font-size:21px}.voucher-brand-mark{width:30px;height:30px}.voucher-cover-main h2{font-size:44px}.voucher-cover-foot{font-size:8px}.voucher-ticket-identifiers{grid-template-columns:1fr}.voucher-section-head h3{font-size:22px}.voucher-totals-table .voucher-total-highlight strong{font-size:23px}.detail-photo-bottom strong{font-size:20px}}@media(max-width:760px){
+ .about-heading{padding-right:32px}
+ .about-brand-stamp{position:static;transform:none;display:flex;justify-content:flex-start;margin-top:15px}
+ .about-brand-mark{width:66px;height:66px}
+ .favorites-decoration--stamp{width:100px;min-width:100px;height:100px}
+ .favorites-brand-mark{width:83px;height:83px}
+ .trip-route-banner{margin:18px 0}
+ .checkout-page-heading::after{display:none}
+}@media(max-width:530px){
+ .favorites-decoration--stamp{display:none}
+ .trip-route-mark{width:54px;height:54px}
+ .trip-route-banner span{font-size:11px}
+ .voucher-welcome-mark{width:47px;height:47px}
+ .not-found--postcard{padding:34px 18px;margin-block:35px}
+}@media(max-width:760px){.page-atmosphere--favorites .page-atmosphere__shape--d{right:8%;top:52%;font-size:46px}.page-atmosphere--favorites .page-atmosphere__shape--e{right:17%;top:79%;font-size:51px}}@media(max-width:760px){
+  .trip-sky{height:460px}
+  .trip-cloud--mint{width:150px;top:18%;left:-4%}
+  .trip-cloud--peach{width:152px;top:30%;right:5%}
+  .trip-cloud--lilac{width:118px;top:9%;left:73%}
+  .trip-cloud--butter{width:112px;top:72%;right:9%}
+  .trip-cloud--blue{width:144px;top:16%;right:-6%}
+  .trip-sky__plane,.trip-sky__airplane{width:58px;height:58px}
+}@media(max-width:760px){.checkout-moving-walkways{right:-10%;width:210px;opacity:.45}.checkout-moving-walkway{width:28px}}@media(max-width:530px){.checkout-moving-walkways{opacity:.28;right:-12%}}@media(max-width:760px){.catalog-heading__ornament{right:-18px;width:132px;height:132px;opacity:.58}.catalog-heading>div:first-child{max-width:100%}.topnote-mark{width:14px;height:14px;flex-basis:14px}}@media(max-width:520px){.catalog-heading__ornament{right:-44px;width:112px;height:112px;opacity:.42}}@media(max-width:760px){.topnote .topnote-experience,.topnote .topnote-mark:last-of-type{display:none}}@media(max-width:760px){
+  .destination-motif{width:67px;height:67px;border-radius:27px;opacity:.29}
+  .destination-motif__symbol{font-size:31px}
+  .destination-motif--1{left:-19px;top:5%}
+  .destination-motif--2{right:-16px;top:48%}
+  .destination-motif--3{left:-17px;top:85%;width:61px;height:61px}
+  .about-passport-stamp--one{right:-56px;top:2%;transform:scale(.74);opacity:.17}
+  .about-passport-stamp--two{left:-49px;top:69%;opacity:.16}
+  .about-postcard{right:-48px;top:84%;opacity:.23}
+  .about-compass{left:-25px;top:32%;opacity:.15}
+  .about-travel-backdrop__route{opacity:.2}
+}@media(max-width:760px){
+  .catalog-heading{padding-bottom:29px}
+  .catalog-heading>div:first-child{max-width:100%}
+  .page-atmosphere--catalog .catalog-motif{width:46px;height:46px;opacity:.41}
+  .page-atmosphere--catalog .catalog-motif__icon{font-size:25px}
+  .page-atmosphere--catalog .catalog-motif--1{left:-14px}
+  .page-atmosphere--catalog .catalog-motif--2{right:-13px}
+  .page-atmosphere--catalog .catalog-motif--3{left:2%}
+  .page-atmosphere--catalog .catalog-motif--4{right:1%}
+  .page-atmosphere--catalog .catalog-motif--5{left:-12px}
+  .page-atmosphere--catalog .catalog-motif--6{right:-13px}
+  .page-atmosphere--catalog .catalog-motif--7{left:1%}
+  .page-atmosphere--catalog .catalog-motif--8{right:2%}
+  .page-atmosphere--catalog .catalog-motif--9{left:1%}
+}@media(max-width:760px){.catalog-ferris-wheel{width:91%;height:91%}}@media(max-width:760px){.trip-review-intro{padding-right:0}.trip-review-intro::before{inset:-17px -12px -15px -20px;background:radial-gradient(ellipse 95% 82% at 42% 48%,#fbfaf6fa 0%,#fbfaf6e9 62%,#fbfaf600 100%)}}@media(max-width:530px){.catalog-region-groups{gap:29px}.catalog-region-heading{margin-bottom:16px}.catalog-region-heading__count{padding:7px 10px}}@media(max-width:760px){
+  .hero-inner{grid-template-columns:minmax(0,1fr)}
+  .hero-copy{max-width:100%;min-width:0;padding:clamp(36px,7vw,54px) 0 0}
+  .hero h1{font-size:clamp(36px,7.5vw,58px);line-height:1.14;letter-spacing:-.052em;margin:18px 0}
+  .hero-subtitle{max-width:620px;line-height:1.65;margin:16px 0 20px}
+  .hero-art{height:clamp(285px,55vw,360px)}
+  .explore-strip-inner h2,.section-head h2{line-height:1.16;letter-spacing:-.047em}
+}@media(max-width:400px){
+  .hero h1{font-size:clamp(33px,9vw,36px);letter-spacing:-.047em}
+  .hero-pill{font-size:10px;padding:8px 12px;letter-spacing:.02em}
+  .hero-art{height:285px}
+  .hero-image-front{height:225px;top:39px}
+  .hero-image-back{height:197px}
+  .hero-sticker{width:65px;height:65px;font-size:20px;right:1%}
+  .hero-sticker small{font-size:10px}
+}@media(max-width:760px){
+  .catalog-page{width:min(620px,calc(100% - 64px))}
+  .page-atmosphere--catalog .catalog-motif{width:44px;height:44px;opacity:.8}
+  .page-atmosphere--catalog .catalog-motif__icon{font-size:26px;opacity:1;filter:saturate(.85)}
+  .page-atmosphere--catalog .catalog-motif--1,.page-atmosphere--catalog .catalog-motif--3,.page-atmosphere--catalog .catalog-motif--5,.page-atmosphere--catalog .catalog-motif--7,.page-atmosphere--catalog .catalog-motif--9{left:3px}
+  .page-atmosphere--catalog .catalog-motif--2,.page-atmosphere--catalog .catalog-motif--4,.page-atmosphere--catalog .catalog-motif--6,.page-atmosphere--catalog .catalog-motif--8{right:3px}
+  .destination-motif{opacity:.56;width:54px;height:54px;border-radius:24px}
+  .destination-motif__symbol{font-size:27px}
+  .destination-motif--1{left:3px;top:5%}
+  .destination-motif--2{right:3px;top:48%}
+  .destination-motif--3{left:3px;top:85%;width:50px;height:50px}
+}@media(max-width:620px){
+  .catalog-destination-grid{grid-template-columns:minmax(0,1fr)}
+  .catalog-heading h1{font-size:clamp(31px,7vw,40px);line-height:1.16;letter-spacing:-.045em}
+  .catalog-heading{padding:27px 21px}
+  .catalog-region-heading{flex-wrap:wrap;row-gap:7px}
+}@media(max-width:760px){
+  .hero-search-shell{margin-top:22px}
+  /* .section{padding-block:55px} anulaba la antigua regla de padding-top
+     por orden de cascada. Aumentamos la especificidad de forma explícita. */
+  .section.explore-strip{padding-top:clamp(130px,29vw,160px)}
+  .catalog-heading{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .catalog-heading>div:first-child{width:100%;max-width:100%;min-width:0}
+  .catalog-heading__ornament{
+    position:relative;inset:auto;right:auto;top:auto;bottom:auto;left:auto;
+    transform:none;width:154px;height:154px;flex:0 0 154px;
+    margin:20px auto 0;opacity:.9;z-index:0
+  }
+  .catalog-ferris-wheel{width:86%;height:86%}
+  /* Las insignias flotan en el margen, sin superponerse a las tarjetas. */
+  .catalog-page{width:min(620px,calc(100% - 72px))}
+  .page-atmosphere--catalog .catalog-motif{width:36px;height:36px;opacity:.82}
+  .page-atmosphere--catalog .catalog-motif__icon{font-size:23px}
+  .page-atmosphere--catalog .catalog-motif--1,.page-atmosphere--catalog .catalog-motif--3,.page-atmosphere--catalog .catalog-motif--5,.page-atmosphere--catalog .catalog-motif--7,.page-atmosphere--catalog .catalog-motif--9{left:0}
+  .page-atmosphere--catalog .catalog-motif--2,.page-atmosphere--catalog .catalog-motif--4,.page-atmosphere--catalog .catalog-motif--6,.page-atmosphere--catalog .catalog-motif--8{right:0}
+}@media(max-width:400px){
+  .section.explore-strip{padding-top:135px}
+  .catalog-heading__ornament{width:142px;height:142px;flex-basis:142px;margin-top:18px}
+}@media(max-width:760px){
+  /* Seleccionamos arriba y confirmamos ABAJO. */
+  .travel-planner-layout .travel-offers-main{order:0}
+  .travel-planner-layout .trip-summary-sticky{order:1;position:static;width:100%;margin-top:5px}
+  /* La primera insignia del detalle no invade la acción de favoritos. */
+  .page-atmosphere--detail .destination-motif--1{top:660px;left:0;right:auto}
+  #resultados,#vuelos,#hoteles,#packs{scroll-margin-top:92px}
+}
+
+/* Navegación móvil en el flujo: al abrirse aumenta la altura del header,
+   nunca se posiciona encima de la atmósfera de Mi viaje. */
+@media(max-width:760px){
+  .header-inner{flex-wrap:wrap;align-content:center;column-gap:10px;row-gap:0}
+  .header-inner>.brand{min-width:0}
+  .mobile-menu-button{flex-shrink:0}
+  .header-inner>.primary-nav{position:static;inset:auto;margin:0;flex:0 0 100%;width:100%;min-width:0;max-height:none;box-shadow:none;background:#fffdfa;z-index:auto;overflow-y:auto;overscroll-behavior:contain}
+  .header-inner>.primary-nav.is-open{display:flex;max-height:min(55dvh,420px);padding:8px 0 14px;border-top:1px solid #e4ede5}
+  .header-inner>.primary-nav a{padding:12px 6px}
+}
+
+
+/* Etapa 32 · simetría móvil: bloques principales con el mismo ancho útil,
+   CTA apiladas y tarjetas centradas para que cada vista respire igual. */
+@media(max-width:760px){
+  .trip-review-page{display:grid;gap:18px;align-items:start}
+  .trip-review-page>*{width:100%;min-width:0}
+  .trip-review-intro,
+  .trip-route-banner,
+  .previous-voucher,
+  .trip-review-page .trip-summary,
+  .review-actions,
+  .review-empty,
+  .catalog-heading,
+  .catalog-layout,
+  .about-heading,
+  .about-panels,
+  .checkout-form-card,
+  .checkout-ticket,
+  .friendly-empty,
+  .voucher-paper,
+  .voucher-success{margin-inline:auto;max-width:620px;width:100%}
+  .trip-review-page .trip-summary{margin:0 auto}
+  .trip-review-intro{padding-right:0;margin-bottom:0}
+  .trip-route-banner{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center}
+  .previous-voucher{display:grid;grid-template-columns:1fr;align-items:start;justify-items:stretch;padding:18px}
+  .previous-voucher .btn,
+  .review-actions .btn,
+  .friendly-empty .btn,
+  .review-empty .btn{width:100%}
+  .review-actions{display:grid;grid-template-columns:1fr}
+  .catalog-layout{gap:20px}
+  .catalog-toolbar,
+  .results-bar{grid-template-columns:1fr;display:grid;gap:10px}
+  .results-bar{padding-inline:0}
+  .catalog-toolbar .sort-field{justify-content:space-between}
+  .catalog-toolbar .sort-menu{width:100%;min-width:0}
+  .catalog-toolbar .sort-menu-trigger{width:100%}
+  .promo-section-inner>div:first-child,
+  .explore-strip-inner,
+  .section-head>div{max-width:620px}
+}
+@media(max-width:530px){
+  .trip-route-banner{padding:14px 16px}
+  .trip-route-banner strong{font-size:14px}
+  .trip-route-banner span{font-size:11px}
+  .previous-voucher,
+  .review-empty,
+  .checkout-form-card{padding-inline:18px}
+  .voucher-paper,
+  .voucher-success,
+  .friendly-empty{padding-inline:18px}
+}
+
+
+/* Etapa 33 · zona de búsqueda realmente clicable y escenario propio para
+   las escondidas del avión. Ninguna tarjeta cubre la escena en móvil. */
+@media(max-width:760px){
+  /* El buscador flota sobre la sección siguiente: el héroe completo necesita
+     su propio nivel de apilamiento, no solo z-index en el botón. */
+  .main-content>.hero{z-index:4}
+  .main-content>.section.explore-strip{position:relative;z-index:1}
+  .hero-search-shell{position:relative;z-index:20;isolation:isolate;pointer-events:auto}
+  .hero-search{position:relative;z-index:1;pointer-events:auto}
+  .hero-search .btn-search{position:relative;z-index:2;min-height:52px;touch-action:manipulation;pointer-events:auto}
+  .hero-flight-trail{pointer-events:none}
+
+  /* Aire libre entre el encabezado y la primera tarjeta de Mi viaje.
+     La coreografía del avión y la posición entre las nubes NO cambian. */
+  .main-content>.page-atmosphere--trip .trip-sky{
+    top:clamp(215px,calc(410px - 25vw),330px);
+    height:180px;
+    overflow:hidden;
+  }
+  .trip-review-page>.trip-route-banner{margin-top:240px}
+}
